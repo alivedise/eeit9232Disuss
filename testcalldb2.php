@@ -12,7 +12,11 @@
 <body>
 
 	<p>
-		<?php 
+		<?php
+
+			$servername = "localhost";
+			$username = "username";
+			$password = "password"; 
 		?>
 	</p>
 
