@@ -26,13 +26,21 @@
 		}
         echo "Connected successfully";
 
-        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
-		if (mysqli_query($conn, $sql_insert)) {
-		    echo "New record created successfully";
-		} else {
-    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
-		}
-	
+//        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
+//		if (mysqli_query($conn, $sql_insert)) {
+//		    echo "New record created successfully";
+//		} else {
+//    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
+//		}
+
+        $sql_delete="DELETE FROM discuss WHERE id=21";
+
+        if ($conn->query($sql_delete)===TRUE){
+            echo "Record deleted successfully";
+        }else{
+            echo "Error record:".$conn->error;
+        }
+            
         $sql="SELECT * FROM discuss";
         $result = $conn->query($sql);
 
