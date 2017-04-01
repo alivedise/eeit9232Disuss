@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
-	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache" />
-	<META HTTP-EQUIV="Expires" CONTENT="0" />
-	<meta name="viewport" http-equiv="Content-Type"
-	content="text/html" charset="UTF-8" />
-	<meta name="viewport"
-	content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-	<title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title></title>
 </head>
 <body>
 
