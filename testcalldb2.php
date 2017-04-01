@@ -30,8 +30,10 @@
         $sql="SELECT * FROM discuss";
         $result = $conn->query($sql);
 		
-		if ($result->num_rows >0){
-			echo "<p>have "+num_row+" obj</p>";
+        if ($result->num_rows >0){
+            echo "<p>have ";
+            echo $result->num_row;
+            echo " data</p>"
 		}else{
 			echo "<p>none</p>";
 		}
