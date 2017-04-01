@@ -26,7 +26,7 @@
 		}
         echo "Connected successfully";
 
-        $sql_insert="INSERT INTO discuss (id,name,title,email,password,context) VALUES ('3','pika','hungry','pika@pika','12345678','meal meal!')";
+        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika2','hungry!!','pika@pika','12345678','meal meal!!!!')";
 		if (mysqli_query($conn, $sql_insert)) {
 		    echo "New record created successfully";
 		} else {
