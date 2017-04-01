@@ -19,7 +19,7 @@
 		$dbname = "discuss";		
 
 		// Create connection
-		$conn = mysqli_connect($servername, $username, $password);
+		$conn = mysqli_connect($servername, $username, $password,$dbname);
 		
 		// Check connection
 		if (!$conn) {
@@ -31,9 +31,9 @@
         $result = $conn->query($sql);
 		
 		if ($result->num_rows >0){
-			echo "have data";
+			echo "<p>have data</p>";
 		}else{
-			echo "none";
+			echo "<p>none</p>";
 		}
 		$conn->close();
 
