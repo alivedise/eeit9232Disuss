@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
 <title></title>
 </head>
 <body>
 
 	<p>
 		<?php
-
-			$servername = "localhost";
-			$username = "username";
-			$password = "password"; 
-		?>
+		$servername = "localhost";
+		$username = "username";
+		$password = "password";
+		
+		// Create connection
+		$conn = mysqli_connect($servername, $username, $password);
+		
+		// Check connection
+		if (!$conn) {
+			die("Connection failed: " . mysqli_connect_error());
+		}
+		echo "Connected successfully";
+		?>	
+		
 	</p>
-
+		
 </body>
 </html>
