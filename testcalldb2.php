@@ -41,7 +41,7 @@
 //        }
 
         $sql_select="SELECT * FROM discuss";
-        $result=$conn->query($sql);
+        $result=$conn->query($sql_select);
 
         if($result->num_rows>0){
             while($row=$result->fetch_assoc()){
