@@ -31,7 +31,7 @@
         $result = $conn->query($sql);
 		
 		if ($result->num_rows >0){
-			echo "<p>have data</p>";
+			echo "<p>have "+num_row+" obj</p>";
 		}else{
 			echo "<p>none</p>";
 		}
