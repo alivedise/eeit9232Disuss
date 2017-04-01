@@ -1,0 +1,17 @@
+body{
+	background-color: : black;
+}
+.showarticle{
+	margin: 10px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0 !important;
+	width: 620px;
+	border-radius: 15px	
+}
+#articleimg{
+	
+	height: 130px;
+	overflow: hidden;
+	margin: auto;
+
+}
