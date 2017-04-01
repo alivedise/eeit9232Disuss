@@ -33,7 +33,7 @@
         $re_nr=$result->num_rows;
 
         if ($re_nr >0){
-            echo "<p>have data</p>";
+            echo "<p>have ".$re_nr." data</p>";
         }else{
 			echo "<p>none</p>";
 		}
