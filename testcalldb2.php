@@ -33,14 +33,21 @@
 //    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
 //		}
 
-        $sql_delete="DELETE FROM discuss WHERE id=21";
+//        $sql_delete="DELETE FROM discuss WHERE id=21";
+//        if ($conn->query($sql_delete)===TRUE){
+//            echo "Record deleted successfully";
+//        }else{
+//            echo "Error record:".$conn->error;
+//        }
 
-        if ($conn->query($sql_delete)===TRUE){
-            echo "Record deleted successfully";
-        }else{
-            echo "Error record:".$conn->error;
-        }
-            
+        $sql_select="SELECT * FROM discuss";
+        $result=$conn->query($sql);
+
+        if($result->num_rows>0){
+            while($row=$result->fetch_assoc()){
+                echo "id:".$row["id"]."<br />";
+            }
+
         $sql="SELECT * FROM discuss";
         $result = $conn->query($sql);
 
