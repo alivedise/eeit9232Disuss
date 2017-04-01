@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<p>
+<!-- 	<p>
 		<?php 
 		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
 		$username = "bb763638944ffa";
@@ -30,6 +30,6 @@
 		$result=mysqli_query($conn,$sql);
 		?>
 	</p>
-
+ -->
 </body>
 </html>
