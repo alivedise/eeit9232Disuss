@@ -16,7 +16,8 @@
 		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
 		$username = "bb763638944ffa";
 		$password = "5b724968";
-		
+		$dbname = "discuss";		
+
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password);
 		
@@ -24,7 +25,18 @@
 		if (!$conn) {
 			die("Connection failed: " . mysqli_connect_error());
 		}
-		echo "Connected successfully";
+        echo "Connected successfully";
+
+        $sql="SELECT * FROM discuss";
+        $result = $conn->query($sql);
+		
+		if ($result->num_rows >0){
+			echo "have data";
+		}else{
+			echo "none";
+		}
+		$conn->close();
+
 		?>	
 		
 	</p>
