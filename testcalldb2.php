@@ -10,7 +10,6 @@
 <title></title>
 </head>
 <body>
-
 	<p>
 		<?php
 		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
@@ -19,7 +18,9 @@
 		$dbname = "discuss";		
 
 		// Create connection
-		$conn = mysqli_connect($servername, $username, $password,$dbname);
+        $conn = mysqli_connect($servername, $username, $password,$dbname);
+
+        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika','hungry','pika@pika','12345678','meal meal!')";
 		
 		// Check connection
 		if (!$conn) {
