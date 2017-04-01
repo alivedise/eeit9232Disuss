@@ -13,9 +13,9 @@
 
 	<p>
 		<?php
-		$servername = "localhost";
-		$username = "username";
-		$password = "password";
+		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
+		$username = "bb763638944ffa";
+		$password = "5b724968";
 		
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password);
