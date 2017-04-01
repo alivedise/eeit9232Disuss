@@ -34,9 +34,6 @@
 
         if ($re_nr >0){
             echo "<p>have ".$re_nr." data</p>";
-			while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["name"] 
-			}
         }else{
 			echo "<p>none</p>";
 		}
