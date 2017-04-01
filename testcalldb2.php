@@ -11,5 +11,24 @@
 </head>
 <body>
 
+	<p>
+		<?php 
+		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
+		$username = "bb763638944ffa";
+		$password = "5b724968";
+
+
+		$conn = mysqli_connect($servername, $username, $password) or die("連不到資料庫");
+		mysqli_select_db($conn,"discuss")
+
+		$sql="SELECT * FROM discuss";
+
+		mysqli_query($conn, "SET CHARACTER SET utf8");
+		mysqli_query($conn, "SET collation_connection = 'utf8_general_ci'")
+
+		$result=mysqli_query($conn,$sql);
+		?>
+	</p>
+
 </body>
 </html>
