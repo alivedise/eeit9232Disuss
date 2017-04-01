@@ -7,7 +7,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
-<title></title>
+	<title></title>
 </head>
 <body>
 	<p>
@@ -18,13 +18,13 @@
 		$dbname = "discuss";		
 
 		// Create connection
-        $conn = mysqli_connect($servername, $username, $password,$dbname);
+		$conn = mysqli_connect($servername, $username, $password,$dbname);
 
 		// Check connection
 		if (!$conn) {
 			die("Connection failed: " . mysqli_connect_error());
 		}
-        echo "Connected successfully";
+		echo "Connected successfully";
 
 //        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
 //		if (mysqli_query($conn, $sql_insert)) {
@@ -40,22 +40,22 @@
 //            echo "Error record:".$conn->error;
 //        }
 
-        $sql_select="SELECT id FROM discuss";
-        $result=$conn->query($sql_select);
+		$sql_select="SELECT id FROM discuss";
+		$result=$conn->query($sql_select);
 
-        if($result->num_rows>0){
-            while($row=$result->fetch_assoc()){
-                echo "id:".$row["id"]."<br />";
-            }
-        }
-        $sql="SELECT * FROM discuss";
-        $result = $conn->query($sql);
+		if($result->num_rows>0){
+			while($row=$result->fetch_assoc()){
+				echo "</br>"."id:".$row["id"]."name:".$row["name"]."title".$row["title"];
+			}
+		}
+		$sql="SELECT * FROM discuss";
+		$result = $conn->query($sql);
 
-        $re_nr=$result->num_rows;
+		$re_nr=$result->num_rows;
 
-        if ($re_nr >0){
-            echo "<p>have ".$re_nr." data</p>";
-        }else{
+		if ($re_nr >0){
+			echo "<p>have ".$re_nr." data</p>";
+		}else{
 			echo "<p>none</p>";
 		}
 		$conn->close();
@@ -63,6 +63,6 @@
 		?>	
 		
 	</p>
-		
+	
 </body>
 </html>
