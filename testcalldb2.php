@@ -32,7 +32,6 @@
 		
         if ($result->num_rows >0){
             echo "<p>have ";
-            echo $result->num_row;
             echo " data</p>"
 		}else{
 			echo "<p>none</p>";
