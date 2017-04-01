@@ -29,8 +29,10 @@
 
         $sql="SELECT * FROM discuss";
         $result = $conn->query($sql);
-		
-        if ($result->num_rows >0){
+
+        $re_nr=$result->num_rows;
+
+        if ($re_nr >0){
             echo "<p>have data</p>";
         }else{
 			echo "<p>none</p>";
