@@ -21,10 +21,10 @@
         $conn = mysqli_connect($servername, $username, $password,$dbname);
 
         $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika','hungry','pika@pika','12345678','meal meal!')";
-		if (mysqli_query($conn, $sql)) {
+		if (mysqli_query($conn, $sql_insert)) {
 		    echo "New record created successfully";
 		} else {
-    		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
 		}
 	
 		// Check connection
