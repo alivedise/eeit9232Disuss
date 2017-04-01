@@ -40,7 +40,7 @@
 //            echo "Error record:".$conn->error;
 //        }
 
-		$sql_select="SELECT id FROM discuss";
+		$sql_select="SELECT id,name FROM discuss";
 		$result=$conn->query($sql_select);
 
 		if($result->num_rows>0){
