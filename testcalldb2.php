@@ -47,7 +47,7 @@
             while($row=$result->fetch_assoc()){
                 echo "id:".$row["id"]."<br />";
             }
-
+        }
         $sql="SELECT * FROM discuss";
         $result = $conn->query($sql);
 
