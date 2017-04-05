@@ -17,25 +17,29 @@
 	<title></title>
 </head>
 <body>
-	<div name="showarticlejsp" class="showarticle">
-		<table>
-			<tr>
-				<!-- 文章相片 -->
-				<td width="450px"><h5>
-						標題<small>作者：</small>
-					</h5></td>
-				<!-- 文章標題 -->
 
-			</tr>
+<div>
+	<? php 
+		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
+		$username = "bb763638944ffa";
+		$password = "5b724968";
+		$dbname = "discuss";		
 
-			<tr>
-				<td>內文：<a></a>(繼續閱讀)
-				</td>
-				<!-- 內文 -->
-			</tr>
-				<td colspan="2">修改文章按鈕</td>
-		</table>
-	</div>
+		// Create connection
+		$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+		$sql_select="SELECT * FROM discuss";
+
+		$result=$conn->query($sql_select);
+
+		if($result->num_rows>0){
+			while($row=$result->fetch_assoc()){
+				echo "<br/>"."id:".$row["id"]." name:".$row["name"]."<br/>"."title:".$row["title"]."<br/>"."context".$row["context"]."<br/>";
+			}
+		}
+
+	?>
+</div>
 
 </body>
 </html>
