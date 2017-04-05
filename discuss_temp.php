@@ -18,7 +18,7 @@
 
 	<link rel=stylesheet type="text/css" href="css/discuss.css">
 
-<title>Discuss</title>
+<title>意見留言板</title>
 </head>
 <body>
 
