@@ -16,7 +16,7 @@
 
 	<script src="js/dis.js" type="text/javascript" charset="utf-8"></script>
 
-	<link rel=stylesheet type="text/css" href="css/dis_temp.css">
+	<link rel=stylesheet type="text/css" href="css/discuss.css">
 
 <title>意見留言板</title>
 </head>
