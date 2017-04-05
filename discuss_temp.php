@@ -26,7 +26,7 @@
 
 	<span id="send">
 		<input name="button" type="button" value="發表文章" class="btn btn-info" onclick="location.href='dis_response.html'">
-		<button type="button" class="btn btn-primary"><a id="gotop" href="#top">回到頂端</a></button>
+		<button type="button" class="btn btn-primary" id="gotop" href="#top">回到頂端</button>
 	</span>
 
 	<div>
