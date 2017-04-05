@@ -17,7 +17,7 @@ $email=$_POST["email"];
 $context=$_POST["context"];
 $password=$_POST["password"];
 /* 將欄位資料加入資料庫 */
-$sql="INSERT discuss (title,name,email,context,password)
+$sql_insert="INSERT INTO discuss (title,name,email,context,password)
 VALUES ('$title','$name','$email','$context','$password')";
-mysql_query($sql);
+mysql_query($sql_insert);
 ?>
