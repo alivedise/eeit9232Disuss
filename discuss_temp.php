@@ -47,9 +47,9 @@
 			while($row=$result->fetch_assoc()){
 				echo "<br/>"."id:".$row["id"];
 				echo "<div class='dispart'><table><tr><td width='600px'><h5>";
-				echo $row["title"]."</h5>";
-				echo "<small>"."作者:".$row["name"]."</small>";
-				echo "</h5></td></tr></table>";	
+				echo $row["title"];
+				echo "<small>"."作者:".$row["name"]."</small></h5>";
+				echo "</td></tr></table>";	
 				echo "<div><p>";
 				echo "context:".$row["context"];
 				echo "</p></div></div>";
