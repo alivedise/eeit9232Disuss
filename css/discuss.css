@@ -18,7 +18,7 @@ a{
 }
 
 #send{
-	float: right;
+	right: 0px;
 	padding-top: 50px;
 	padding-right: 50px;
 	position: fixed;
