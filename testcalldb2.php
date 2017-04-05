@@ -27,8 +27,8 @@
 
 		$name="pikapika";
 		$title="pikatest";
-		$email="pika@pika"
-		$password="12345678"
+		$email="pika@pika";
+		$password="12345678";
 		$context="飯飯!";
 
        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('$name','$title','$email',$password','$context')";
