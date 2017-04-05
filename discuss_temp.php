@@ -60,7 +60,7 @@
 				echo "<div><p>";
 				echo "context:".$row["context"];
 				echo "</p>";
-				echo "<div style='display:inline;'><a>修改文章</a><p style='display:inline;'>・</p><a>刪除文章</a></div>";
+				echo "<div style='display:inline;'><a>修改文章</a><p style='display:inline; padding-right: 30px;'>・</p><a>刪除文章</a></div>";
 				echo "</div></div>";
 			}
 		}
