@@ -2,7 +2,7 @@ body{
 	background-color:black;
 }
 small,a{
-	float: right;
+	right: 0px;
 }
 a{
 	padding-right: 30px;

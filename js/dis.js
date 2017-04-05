@@ -1,9 +1,8 @@
 $(document).ready(function(){
-	var divtype=$(".dispart").css("height");
-	if(divtype!="100%"){
-		$(".btn").click(function(){
-			$(".dispart").css("height","100%");
-		});
-	}
+	("#gotop").click(function(){
+		$("html,body").animate({scrollTop:0},900);
+
+		return false;
+	})
 
 })
