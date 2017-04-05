@@ -28,13 +28,26 @@
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-		$sql_select="SELECT id,name,title,context FROM discuss";
+		$sql_select="SELECT id,name FROM discuss";
 		$result=$conn->query($sql_select);
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "</br>"."id:".$row["id"]." name:".$row["name"]."</br>"."title:".$row["title"]."</br>"."context".$row["context"]."</br>";
+				echo "</br>"."id:".$row["id"];
+				echo "name:".$row["name"];
 			}
+		}
+
+		// $sql_select="SELECT id,name,title,context FROM discuss";
+		// $result=$conn->query($sql_select);
+
+		// if($result->num_rows>0){
+		// 	while($row=$result->fetch_assoc()){
+				
+		// 		echo "</br>"."id:".$row["id"];
+		// 		echo "name:".$row["name"];
+			
+		// 	}
 		}
 
 	$conn->close();

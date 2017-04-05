@@ -48,6 +48,8 @@
 				echo "name:".$row["name"];
 			}
 		}
+
+		
 		$sql="SELECT * FROM discuss";
 		$result = $conn->query($sql);
 
