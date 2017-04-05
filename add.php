@@ -4,6 +4,7 @@
 
 </head>
 <body>
+	<?header("location:discuss_temp.php");?>
 
 	<?php
 
