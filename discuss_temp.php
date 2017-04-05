@@ -24,11 +24,11 @@
 <body>
 	<div id="top"></div>
 
-	<div id="send">
+	<span id="send">
 		<input name="button" type="button" value="發表文章" class="btn btn-info" onclick="location.href='dis_response.html'">
 		<br/>
 		<input name="button" type="button" value="回到頂端" class="btn btn-primary" onclick="location.href='#top'">
-	</div>
+	</span>
 
 	<div>
 		<?php
