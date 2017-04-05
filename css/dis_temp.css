@@ -3,8 +3,7 @@ body{
 	color: #F0F0F0;
 }
 #disform{
-	padding: 20px;
 	margin: 0px auto;
-	position: absolute;
-	text-align: center;
+	width: 800px;
+	text-align:center;
 }
