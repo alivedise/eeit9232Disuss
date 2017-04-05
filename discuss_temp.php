@@ -41,13 +41,13 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "</br>";
+				echo "<br/>";
 				echo "id:".$row["id"];
 				echo " name:".$row["name"];
-				echo "</br>";
+				echo "<br/>";
 				echo "title:".$row["title"];
-				echo "</br>";
-				echo "context".$row["context"];
+				echo "<br/>";
+				echo "context:".$row["context"];
 			}
 		}
 
