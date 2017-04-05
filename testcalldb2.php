@@ -25,12 +25,18 @@
 		}
 		echo "Connected successfully";
 
-//        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
-//		if (mysqli_query($conn, $sql_insert)) {
-//		    echo "New record created successfully";
-//		} else {
-//    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
-//		}
+		$name="pikapika";
+		$title="pikatest";
+		$email="pika@pika"
+		$password="12345678"
+		$context="飯飯!";
+
+       $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('$name','$title','$email',$password','$context')";
+		if (mysqli_query($conn, $sql_insert)) {
+		    echo "New record created successfully";
+		} else {
+   		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
+		}
 
 //        $sql_delete="DELETE FROM discuss WHERE id=21";
 //        if ($conn->query($sql_delete)===TRUE){
