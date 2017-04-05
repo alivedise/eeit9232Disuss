@@ -34,31 +34,24 @@
 		}
 		echo "Connected successfully";
 
-//        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
-//		if (mysqli_query($conn, $sql_insert)) {
-//		    echo "New record created successfully";
-//		} else {
-//    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
-//		}
+//以下為select
 
-//        $sql_delete="DELETE FROM discuss WHERE id=21";
-//        if ($conn->query($sql_delete)===TRUE){
-//            echo "Record deleted successfully";
-//        }else{
-//            echo "Error record:".$conn->error;
-//        }
-
-		$sql_select="SELECT id,name FROM discuss";
+		$sql_select="SELECT id,name,title,context FROM discuss";
 		$result=$conn->query($sql_select);
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "</br>"."id:".$row["id"];
+				echo "</br>";
+				echo "id:".$row["id"];
 				echo " name:".$row["name"];
+				echo "</br>";
+				echo "title:".$row["title"];
+				echo "</br>";
+				echo "context".$row["context"];
 			}
 		}
 
-
+//結束
 		$sql="SELECT * FROM discuss";
 		$result = $conn->query($sql);
 
