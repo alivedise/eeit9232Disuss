@@ -31,7 +31,7 @@
 		$password="12345678";
 		$context="eat";
 
-       $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('$name','$title','$email',$password','$context')";
+       $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('$name','$title','$email','$password','$context')";
 		if (mysqli_query($conn, $sql_insert)) {
 		    echo "New record created successfully";
 		} else {
