@@ -48,6 +48,7 @@
 				echo "title:".$row["title"];
 				echo "<br/>";
 				echo "context:".$row["context"];
+				echo "<br/>"
 			}
 		}
 
