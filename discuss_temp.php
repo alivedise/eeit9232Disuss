@@ -19,7 +19,7 @@
 <body>
 
 <div>
-	<? php 
+	<?php 
 		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
 		$username = "bb763638944ffa";
 		$password = "5b724968";
