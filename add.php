@@ -31,6 +31,13 @@
 	$password=$_POST["password"];
 
 	echo("$title"."$name"."$email"."$context"."$password");
+
+	$sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('$name','$title','$email','$password','$context')";
+	if (mysqli_query($conn, $sql_insert)) {
+		echo "New record created successfully";
+	} else {
+		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
+	}
 	
 
 	?>
