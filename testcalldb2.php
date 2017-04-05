@@ -44,7 +44,8 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "</br>"."id:".$row["id"]."name:".$row["name"];
+				echo "</br>"."id:".$row["id"];
+				echo "name:".$row["name"];
 			}
 		}
 		$sql="SELECT * FROM discuss";

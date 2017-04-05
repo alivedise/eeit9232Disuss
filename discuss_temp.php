@@ -33,7 +33,7 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "<br/>"."id:".$row["id"]." name:".$row["name"]."<br/>"."title:".$row["title"]."<br/>"."context".$row["context"]."<br/>";
+				echo "</br>"."id:".$row["id"]." name:".$row["name"]."</br>"."title:".$row["title"]."</br>"."context".$row["context"]."</br>";
 			}
 		}
 
