@@ -1,3 +1,9 @@
+<html>
+<head>
+<title>討論區</title>
+</head>
+<body>
+
 <?header("location:discuss_temp.php");?>    
 <?php
 
@@ -21,3 +27,6 @@ $sql_insert="INSERT INTO discuss (title,name,email,context,password)
 VALUES ('$title','$name','$email','$context','$password')";
 mysql_query($sql_insert);
 ?>
+
+</body>
+</html>
