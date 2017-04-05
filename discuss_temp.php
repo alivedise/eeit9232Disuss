@@ -22,7 +22,7 @@
 <title>意見留言板</title>
 </head>
 <body>
-<input name="button" type="button" value="發表文章" id="send" class="btn btn-info" onclick="location.href='dis_response.php'">
+<input name="button" type="button" value="發表文章" id="send" class="btn btn-info" onclick="location.href='dis_response.html'">
 
 	<div>
 		<?php
