@@ -2,7 +2,7 @@ body{
 	background-color:black;
 	color: #F0F0F0;
 }
-.disform{
+#disform{
 	padding: 20px;
 	margin: 0px auto;
 	position: absolute;
