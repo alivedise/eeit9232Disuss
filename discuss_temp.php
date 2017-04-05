@@ -14,9 +14,9 @@
 	<script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-	<script src="dis.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dis.js" type="text/javascript" charset="utf-8"></script>
 
-	<link rel=stylesheet type="text/css" href="discuss.css">
+	<link rel=stylesheet type="text/css" href="css/discuss.css">
 
 <title>Discuss</title>
 </head>
@@ -45,7 +45,7 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "id:".$row["id"];
+				echo "<br/>"."id:".$row["id"];
 				echo "<div class='dispart'><table><tr><td width='600px'><h5>";
 				echo $row["title"]."</h5>";
 				echo "<small>"."作者:".$row["name"]."</small>";
