@@ -53,7 +53,7 @@
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
 				echo "<br/>".$row["id"];
-				echo "<div class='dispart'><table><tr><td width='600px'><h5>";
+				echo "<div class='dispart'"." id='".$row["id"]."'><table><tr><td width='600px'><h5>";
 				echo $row["title"];
 				echo "<small>"."作者:".$row["name"]."</small></h5>";
 				echo "</td></tr></table>";	
