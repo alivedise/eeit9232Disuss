@@ -18,9 +18,11 @@
 
 	<link rel=stylesheet type="text/css" href="css/discuss.css">
 
+
 <title>意見留言板</title>
 </head>
 <body>
+<input name="button" type="button" value="發表文章" id="send" class="btn btn-info" onclick="location.href='dis_response.php'">
 
 	<div>
 		<?php
@@ -45,7 +47,7 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "<br/>"."id:".$row["id"];
+				echo "<br/>".$row["id"];
 				echo "<div class='dispart'><table><tr><td width='600px'><h5>";
 				echo $row["title"];
 				echo "<small>"."作者:".$row["name"]."</small></h5>";

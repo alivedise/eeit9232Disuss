@@ -6,21 +6,17 @@ small,a{
 }
 a{
 	padding-right: 30px;
-
 }
+
 .dispart{
-	margin: 10px;
+	margin: 0px auto;
 	padding: 10px;
 	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;
 	width: 800px;
-	height: 105px;
 	border-radius: 15px;
-	overflow: hidden;
-}
-#articleimg{
-	
-	height: 130px;
-	overflow: hidden;
-	margin: auto;
 
+}
+
+#send{
+	float: right;
 }
