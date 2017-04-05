@@ -13,20 +13,40 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 	<script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
- -->
-	<title>Discuss</title>
+-->
+<title>Discuss</title>
 </head>
 <body>
 
-<div>
-	<?php 
+	<div>
+		<?php
 		$servername = "ja-cdbr-azure-east-a.cloudapp.net";
 		$username = "bb763638944ffa";
 		$password = "5b724968";
 		$dbname = "discuss";		
 
 		// Create connection
-		$conn = mysqli_connect($servername, $username, $password, $dbname);
+		$conn = mysqli_connect($servername, $username, $password,$dbname);
+
+		// Check connection
+		if (!$conn) {
+			die("Connection failed: " . mysqli_connect_error());
+		}
+		echo "Connected successfully";
+
+//        $sql_insert="INSERT INTO discuss (name,title,email,password,context) VALUES ('pika3','hungry!!','pika@pika','12345678','meal meal!!!!')";
+//		if (mysqli_query($conn, $sql_insert)) {
+//		    echo "New record created successfully";
+//		} else {
+//    		echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
+//		}
+
+//        $sql_delete="DELETE FROM discuss WHERE id=21";
+//        if ($conn->query($sql_delete)===TRUE){
+//            echo "Record deleted successfully";
+//        }else{
+//            echo "Error record:".$conn->error;
+//        }
 
 		$sql_select="SELECT id,name FROM discuss";
 		$result=$conn->query($sql_select);
@@ -34,26 +54,25 @@
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
 				echo "</br>"."id:".$row["id"];
-				echo "name:".$row["name"];
+				echo " name:".$row["name"];
 			}
 		}
 
-		// $sql_select="SELECT id,name,title,context FROM discuss";
-		// $result=$conn->query($sql_select);
 
-		// if($result->num_rows>0){
-		// 	while($row=$result->fetch_assoc()){
-				
-		// 		echo "</br>"."id:".$row["id"];
-		// 		echo "name:".$row["name"];
-			
-		// 	}
+		$sql="SELECT * FROM discuss";
+		$result = $conn->query($sql);
+
+		$re_nr=$result->num_rows;
+
+		if ($re_nr >0){
+			echo "<p>have ".$re_nr." data</p>";
+		}else{
+			echo "<p>none</p>";
 		}
+		$conn->close();
 
-	$conn->close();
-
-	?>
-</div>
+		?>
+	</div>
 
 </body>
 </html>
