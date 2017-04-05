@@ -1,7 +1,9 @@
 body{
 	background-color:black;
-	color: #FCFCFC;
+	color: #F0F0F0;
 }
 .disform{
 	padding: 20px;
+	width: 800px;
+	margin: 0px auto;
 }
