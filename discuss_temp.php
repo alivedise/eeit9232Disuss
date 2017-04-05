@@ -22,12 +22,12 @@
 	<title>意見留言板</title>
 </head>
 <body>
-<div id="top"></div>
+	<div id="top"></div>
 
-<div id="send">
+	<div id="send">
 		<input name="button" type="button" value="發表文章" class="btn btn-info" onclick="location.href='dis_response.html'">
-		<input name="button" type="button" value="回到頂端" class="btn btn-default" onclick="location.href='#top'">
-
+		<br/>
+		<input name="button" type="button" value="回到頂端" class="btn btn-primary" onclick="location.href='#top'">
 	</div>
 
 	<div>
