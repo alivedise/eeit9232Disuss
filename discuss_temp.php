@@ -14,6 +14,10 @@
 	<script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+	<script src="dis.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel=stylesheet type="text/css" href="discuss.css">
+
 <title>Discuss</title>
 </head>
 <body>
@@ -41,14 +45,14 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "<br/>";
 				echo "id:".$row["id"];
-				echo " name:".$row["name"];
-				echo "<br/>";
-				echo "title:".$row["title"];
-				echo "<br/>";
+				echo "<div class='dispart'><table><tr><td width='600px'><h5>";
+				echo $row["title"]."</h5>";
+				echo "<small>"."作者:".$row["name"]."</small>";
+				echo "</h5></td></tr></table>";	
+				echo "<div><p>";
 				echo "context:".$row["context"];
-				echo "<br/>";
+				echo "</p></div></div>";
 			}
 		}
 
