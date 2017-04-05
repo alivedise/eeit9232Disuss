@@ -23,8 +23,7 @@
 	
 	<!-- 滑出選單 -->
 	<div id="disform">
-		<div class="col-xs-12 col-md-8">
-			<div class="col-xs-6 col-md-4">
+
 				<form name="send_dis" action="add.php" method="post" accept-charset="utf-8">
 					<h3>意見留言板</h3>
 
@@ -33,20 +32,18 @@
 					<p>E-mail：</p><input type="text" name="email" placeholder="僅供回覆使用，不公開" class="form-control"><p></p>
 					<p>內文：</p>
 					<textarea name="context" class="form-control" rows="5"></textarea><p></p>
-					
+
 					<p>發文密碼：</p><input id="psw1" type="password" name="password" placeholder="輸入8位數字，設定密碼以便刪除修改本篇文章" class="form-control"><p></p>
-					
+
 					<p>再次確認發文密碼：</p><input id="psw2" type="password" placeholder="請重複上一欄輸入的8位數字密碼" class="form-control">
 
 					<br/>
-					
+
 					<input name="submit" type="Submit" value="送出文章" class="btn btn-success">
 					<input name="reset" type="Reset" value="清除內容" class="btn btn-danger"	>
 					<input name="button" type="button" value="回文章區" class="btn btn-info" onclick="location.href='discuss_temp.php'">
 
 				</form>
-			</div>
-		</div>
 	</div>
 	
 	<div id="disarticle">
