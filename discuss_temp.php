@@ -59,8 +59,8 @@
 				echo "</td></tr></table>";	
 				echo "<div><p>";
 				echo $row["context"];
-				echo "<div id='editbox'><a>修改文章</a><a>刪除文章</a></div>";
-				echo "</p></div>";
+
+				echo "</p><a>修改文章</a><a>刪除文章</a></div>";
 				echo "</div>";
 			}
 		}
