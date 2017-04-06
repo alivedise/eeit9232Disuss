@@ -1,12 +1,13 @@
 body{
 	background-color:black;
 }
-small,a{
+small{
 	float: right;
 	padding-right: 0px;
 }
-a{
-	padding-right: 30px;
+
+.action{
+	text-align: right;
 }
 
 .dispart{
@@ -26,7 +27,3 @@ a{
 	width: 100px;
 }
 
-#editbox{
-	padding-bottom: 10px;
-	display: inline;
-}
