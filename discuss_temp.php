@@ -50,6 +50,20 @@
 		$sql_select="SELECT id,name,title,context FROM discuss order by id desc";
 		$result=$conn->query($sql_select);
 
+		$number=5; //每頁五筆
+		$total=num_rows($sql_select); //總共筆數
+		$pages=ceil($total/$number);//頁數
+
+		$p=$_GET['p'];
+
+		if($p==''){
+			$p=1;
+		}
+
+		$start=($p-1)*$number;
+		$sql_select="SELECT id,name,title,context FROM discuss order by id desc limit $start,$number";
+		$result=$conn->query($sql_select);
+
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
 				echo "<br/>".$row["id"];
@@ -78,6 +92,14 @@
 		$conn->close();
 
 		?>
+	</div>
+	<div class="pagenum">
+		<?php
+			for($i=1;$i<=$pages;$i++){
+				echo "<a href=discuss_temp.php?p=$i>$i</a>";
+			}
+		 ?>
+		
 	</div>
 
 </body>
