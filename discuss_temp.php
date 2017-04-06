@@ -50,10 +50,6 @@
 		$sql_select="SELECT id,name,title,context FROM discuss order by id desc";
 		$result=$conn->query($sql_select);
 
-		$number=5; //每頁五筆
-		$total=num_rows($sql_select); //總共筆數
-		$pages=ceil($total/$number);//頁數
-
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
@@ -83,10 +79,6 @@
 		$conn->close();
 
 		?>
-	</div>
-	<div class="pagenum">
-
-		
 	</div>
 
 </body>
