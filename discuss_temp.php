@@ -47,7 +47,7 @@
 
 //以下為select
 
-		$sql_select="SELECT id,name,title,context FROM discuss order by id desc";
+		$sql_select="SELECT id,name,title,context,date FROM discuss order by id desc";
 		$result=$conn->query($sql_select);
 
 
@@ -56,7 +56,7 @@
 				echo "<br/>".$row["id"];
 				echo "<div class='dispart'"." id='p".$row["id"]."'><h5>";
 				echo $row["title"];
-				echo "<small>"."作者:".$row["name"]."</small></h5>";	
+				echo "<small>"."作者:".$row["name"]." "."發文時間:".$row["date"]."</small></h5>";	
 				echo "<div>";
 				echo $row["context"];
 				echo "</div>";
