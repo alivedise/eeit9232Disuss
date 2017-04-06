@@ -53,9 +53,8 @@
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
-				echo "<br/>".$row["id"];
 				echo "<div class='dispart'"." id='p".$row["id"]."'><h5>";
-				echo $row["title"];
+				echo "<span class='id'>".$row["id"]."</span> ".$row["title"];
 				echo "<small>"."作者：".$row["name"]."/"."發文時間：".$row["date"]."</small></h5>";	
 				echo "<div>";
 				echo $row["context"];

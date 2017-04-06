@@ -1,28 +1,28 @@
-body{
+body {
 	background-color:black;
 }
-small{
+
+small {
 	float: right;
 	padding-right: 0px;
 }
 
-.action{
+.action {
 	text-align: right;
 }
 
-.dispart{
-	margin: 0px auto;
+.dispart {
+	margin: 1rem;
 	padding: 10px;
 	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;
-	width: 800px;
 	border-radius: 15px;
 }
 
-.pagenum{
+.pagenum {
 	text-align: center;
 }
 
-#send{
+#send {
 	right: 0px;
 	padding-top: 50px;
 	padding-right: 50px;
