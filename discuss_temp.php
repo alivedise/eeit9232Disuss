@@ -53,11 +53,10 @@
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
 				echo "<br/>".$row["id"];
-				echo "<div class='dispart'"." id='p".$row["id"]."'><table><tr><td width='600px'><h5>";
+				echo "<div class='dispart'"." id='p".$row["id"]."'><h5>";
 				echo $row["title"];
-				echo "<small>"."作者:".$row["name"]."</small></h5>";
-				echo "</td></tr></p><a>修改文章</a><a>刪除文章</a></table>";	
-				echo "<div><p>";
+				echo "<small>"."作者:".$row["name"]."</small></h5>";	
+				echo "<div>";
 				echo $row["context"];
 				echo "</div>";
 				echo "</div>";
