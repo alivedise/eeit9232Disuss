@@ -59,7 +59,7 @@
 				echo "<div>";
 				echo $row["context"];
 				echo "</div>";
-				echo "<div class='action'><a>修改文章</a><a>刪除文章</a></div>";
+				echo "<div class='action'><a>修改文章</a>・<a>刪除文章</a></div>";
 				echo "</div>";
 			}
 		}
