@@ -56,7 +56,7 @@
 				echo "<br/>".$row["id"];
 				echo "<div class='dispart'"." id='p".$row["id"]."'><h5>";
 				echo $row["title"];
-				echo "<small>"."作者:".$row["name"]." "."發文時間:".$row["date"]."</small></h5>";	
+				echo "<small>"."作者：".$row["name"]."/"."發文時間：".$row["date"]."</small></h5>";	
 				echo "<div>";
 				echo $row["context"];
 				echo "</div>";
