@@ -61,8 +61,6 @@
 		}
 
 		$start=($p-1)*$number;
-		$sql_select="SELECT id,name,title,context FROM discuss order by id desc limit $start,$number";
-		$result=$conn->query($sql_select);
 
 		if($result->num_rows>0){
 			while($row=$result->fetch_assoc()){
