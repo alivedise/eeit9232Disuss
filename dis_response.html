@@ -27,11 +27,11 @@
 				<form name="send_dis" action="add.php" method="post" accept-charset="utf-8">
 					<h3>意見留言板</h3>
 
-					<p>標題：</p><input type="text" name="title" class="form-control"><p></p>	
-					<p>暱稱：</p><input type="text" name="name" class="form-control"><p></p>		
-					<p>E-mail：</p><input type="text" name="email" placeholder="僅供回覆使用，不公開" class="form-control"><p></p>
+					<p>標題：</p><input type="text" name="title" class="form-control" placeholder="請輸入發文標題"><p></p>	
+					<p>暱稱：</p><input type="text" name="name" class="form-control" value="訪客"><p></p>		
+					<p>E-mail：</p><input type="text" name="email" placeholder="僅供回覆使用，不公開（非必要）" class="form-control"><p></p>
 					<p>內文：</p>
-					<textarea name="context" class="form-control" rows="5"></textarea><p></p>
+					<textarea name="context" class="form-control" rows="5" placeholder="輸入您的意見"></textarea><p></p>
 
 					<p>發文密碼：</p><input id="psw1" type="password" name="password" placeholder="輸入8位數字，設定密碼以便刪除修改本篇文章" class="form-control"><p></p>
 

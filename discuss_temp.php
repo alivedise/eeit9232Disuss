@@ -56,11 +56,10 @@
 				echo "<div class='dispart'"." id='p".$row["id"]."'><table><tr><td width='600px'><h5>";
 				echo $row["title"];
 				echo "<small>"."作者:".$row["name"]."</small></h5>";
-				echo "</td></tr></table>";	
+				echo "</td></tr></p><a>修改文章</a><a>刪除文章</a></table>";	
 				echo "<div><p>";
 				echo $row["context"];
-
-				echo "</p><a>修改文章</a><a>刪除文章</a></div>";
+				echo "</div>";
 				echo "</div>";
 			}
 		}
