@@ -47,7 +47,7 @@
 
 //以下為select
 
-		$sql_select="SELECT id,name,title,context FROM discuss";
+		$sql_select="SELECT id,name,title,context FROM discuss order by id desc";
 		$result=$conn->query($sql_select);
 
 		if($result->num_rows>0){
